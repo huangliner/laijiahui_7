@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script> 
+window.name = "window"; 
+object = { 
+name: "object", 
+run: function() { 
+var inner = function(){ 
+alert("My name is " + this.name); 
+} 
+inner(); 
+} 
+}; 
+object.run(); 
+</script> 
+	</body>
+</html>
